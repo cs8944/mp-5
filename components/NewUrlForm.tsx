@@ -32,7 +32,7 @@ const StyledButton = styled.button`
 const InputWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 5% auto;
+    margin: 4% auto;
     border: 1px solid black;
     border-radius: 1vw;
     padding: 1% 3% 3% 3%;
