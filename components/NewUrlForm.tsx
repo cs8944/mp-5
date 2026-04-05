@@ -14,7 +14,7 @@ const StyledInput = styled.input`
 `;
 
 const StyledInput2 = styled(StyledInput)`
-    width: 75%;
+    width: 38%;
     text-align: left;
     padding-left: 2%;
 `;
@@ -94,7 +94,7 @@ export default function NewUrlForm() {
                 <StyledInput id="website" type="text" placeholder="Ex. https://www.google.com" value={longurl} onChange={(e) => setLongurl(e.target.value)}></StyledInput>
                 <label htmlFor="alias"><StyledP>Enter the Shortened Alias!</StyledP></label>
                 <AliasDiv>
-                    <StyledP>Site/</StyledP>
+                    <StyledP>https://mp-5-vert-ten.vercel.app/</StyledP>
                     <StyledInput2 id="alias" type="text" placeholder="Ex. resume" value={shorturl} onChange={(e) => setShorturl(e.target.value)}></StyledInput2>
                 </AliasDiv>
                 <StyledButton type="submit">Shorten</StyledButton>
@@ -102,7 +102,7 @@ export default function NewUrlForm() {
             <DisplayDiv $active={showValid}>
                 <StyledH1>Your shortened URL is now available!</StyledH1>
                 <StyledP>You can access it at</StyledP>
-                <StyledP>Site/{shorturl}</StyledP>
+                <StyledP>https://mp-5-vert-ten.vercel.app/{shorturl}</StyledP>
             </DisplayDiv>
             <DisplayDiv1 $active={showInvalid}>
                 <StyledH1>Your shortened URL could not be made</StyledH1>
